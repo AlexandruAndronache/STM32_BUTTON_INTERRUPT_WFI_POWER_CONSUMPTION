@@ -2,11 +2,12 @@
  Low Power mode for STM32F44xx
 
 **Overview**
+
 This repository contains a demonstration of the sleep mode functionality on an STM32F44xx microcontroller. The project showcases how to put the microcontroller into a low-power sleep mode and wake it up using an external button press. Upon waking, the microcontroller sends a message via UART to a connected terminal. The minor but very useful instructions reduced the power consumption from 25 mA to 6.4 mA. This was possible by using: 
-  SleepOnExit feature, 
-  __WFI (Wait for Interrupt - The processor sleeps between Interrupts), 
+SleepOnExit feature, 
+__WFI (Wait for Interrupt - The processor sleeps between Interrupts), 
   GPIO_Analog_Config() which sets the unused pins into Analog mode, 
-  __HAL_RCC_USART2_CLK_SLEEP_DISABLE()  __HAL_RCC_GPIOA_CLK_SLEEP_DISABLE();
+ __HAL_RCC_USART2_CLK_SLEEP_DISABLE()  __HAL_RCC_GPIOA_CLK_SLEEP_DISABLE();
 
 **Features**
 Low-Power Sleep Mode: The microcontroller enters a low-power sleep mode to conserve energy.
