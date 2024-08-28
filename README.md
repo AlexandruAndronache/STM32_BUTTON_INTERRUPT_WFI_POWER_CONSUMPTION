@@ -18,12 +18,19 @@ UART Communication: Upon waking, a message is transmitted via UART to notify tha
 **Project Structure**
 
 ├── Core
+
 │   ├── Inc
-│   │   └── main.h             # Main header file
+
+│   │   └── main.h  
+# Main header file
 │   └── Src
-│       └── main.c             # Main source file
+
+│       └── main.c   
+# Main source file
 ├── Drivers
+
 │   └── STM32F4xx_HAL_Driver   # HAL driver files
+
 └── README.md                  # This file
 
 **Code Explanation**
